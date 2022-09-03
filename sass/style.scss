@@ -1,2 +1,47 @@
 @charset "UTF-8";
-@import "colors.scss";
+@import "variables/colors.scss";
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: $purple;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  section#login {
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+
+    div#imagem {
+      display: block;
+      background: $purple url(../imagens/metal.jpg) no-repeat;
+      background-size: cover;
+      height: 200px;
+    }
+
+    div#formulario {
+      display: block;
+      padding: 10px;
+    }
+  }
+}
